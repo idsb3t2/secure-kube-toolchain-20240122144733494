@@ -537,7 +537,7 @@ spec:
       runAfter: [deploy-to-kubernetes]
       params:
         - name: ibmcloud-api
-          value: $(params.ibmcloud-api)
+          value: $(params.ibmcloud-api-cluster-env)
         - name: shuttle-properties-file
           value: "build.properties"
         - name: cluster-region
