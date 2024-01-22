@@ -8,6 +8,9 @@ spec:
     - name: ibmcloud-api
       description: the ibmcloud api
       default: https://cloud.ibm.com
+    - name: ibmcloud-api-cluster-env
+      description: the ibmcloud api
+      default: https://cloud.ibm.com
     - name: repository
       description: The git repo
     - name: branch
@@ -196,6 +199,8 @@ spec:
         params:
           - name: ibmcloud-api
             value: $(params.ibmcloud-api)
+          - name: ibmcloud-api-cluster-env
+            value: $(params.ibmcloud-api-cluster-env)
           - name: repository
             value: $(params.repository)
           - name: branch
